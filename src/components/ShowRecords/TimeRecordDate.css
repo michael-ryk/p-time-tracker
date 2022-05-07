@@ -1,0 +1,23 @@
+.record-date {
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  background-color: rgb(220, 220, 220);
+  border: 1px solid;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-date__year {
+  font-size: 1rem;
+}
+
+.record-date__month {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.record-date__day {
+  font-size: 1.5rem;
+}
