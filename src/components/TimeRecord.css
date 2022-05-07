@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.timeRec-item {
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    padding: 0.4rem 3rem;
+    margin: 1rem 10%;
+    border-radius: 10px;
+    background-color: lightslategrey;
+}
+
+.timeRec-item__date {
+    font-size: 1.25rem ;
+    padding: 0 2%;
+}
+
+.timeRec-item__category {
+    min-width: 20rem;
+    text-align: left;
+    font-size: 1.25rem ;
+    padding: 0 2%;
+}
+
+.timeRec-item__time {
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(147, 147, 147);
+    font-size: 1.5rem;
+    padding: 0.2rem 1.5rem;
+}
+
+.timeRec-item__prodwast {
+    font-size: 1.5rem;
+    color: rgb(65, 64, 64);
+    padding: 0 2%;
+}
