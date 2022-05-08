@@ -12,12 +12,17 @@ function RecordForm() {
   function onChange({ target }) {
     const { name, value } = target;
     setNewRecord((prev) => {
-      return {...prev, [name]:value}
+      return { ...prev, [name]: value };
     });
   }
 
+  function submitHandler(event) {
+    event.preventDefault();
+    console.log(newRecord);
+  }
+
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className='record-form__items'>
         <div className='record-form__item'>
           <label>Date:</label>
