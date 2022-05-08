@@ -1,7 +1,8 @@
 .record-date {
   display: flex;
   flex-direction: column;
-  width: 5rem;
+  flex-shrink: 0;
+  width: 4rem;
   background-color: rgb(220, 220, 220);
   border: 1px solid;
   border-radius: 10px;
