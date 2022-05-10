@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/p-time-tracker/static/css/main.59062857.css",
+    "main.js": "/p-time-tracker/static/js/main.be0562b2.js",
+    "index.html": "/p-time-tracker/index.html",
+    "main.59062857.css.map": "/p-time-tracker/static/css/main.59062857.css.map",
+    "main.be0562b2.js.map": "/p-time-tracker/static/js/main.be0562b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59062857.css",
+    "static/js/main.be0562b2.js"
+  ]
+}
