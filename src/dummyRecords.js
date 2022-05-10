@@ -1,4 +1,4 @@
-const dummyRecords = [
+const DUMMY_RECORDS = [
     {
         id: 1,
         date: new Date(2022, 5, 7),
@@ -22,4 +22,4 @@ const dummyRecords = [
     },
 ];
 
-export default dummyRecords;
+export default DUMMY_RECORDS;

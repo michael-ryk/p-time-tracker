@@ -8,8 +8,7 @@ function TimeRecord(props){
   const [filter, setFilter] = useState('Productive');
 
   function filterChangeHandler(selectedType) {
-    console.log(selectedType.target.value);
-    setFilter(selectedType.target.value);
+    setFilter(selectedType);
   }
 
 
