@@ -2,7 +2,7 @@
   "name": "p-time-tracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": : "https://michael-ryk.github.io/p-time-tracker",
+  "homepage": "https://michael-ryk.github.io/p-time-tracker",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
