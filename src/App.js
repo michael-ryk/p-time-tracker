@@ -8,9 +8,15 @@ function App() {
 
   const [recordList, setRecordList] = useState(DUMMY_RECORDS);
   
+  function appendToRecordList(newRecord) {
+    setRecordList((prev) => {
+      return [...prev, newRecord];
+    });
+  }
+
   return (
     <div className='App'>
-      <NewRecord records={recordList}/>
+      <NewRecord records={recordList} onSubmit={appendToRecordList}/>
       <TimeRecords records={recordList}/>
     </div>
   );

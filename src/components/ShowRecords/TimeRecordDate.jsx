@@ -1,9 +1,10 @@
 import './TimeRecordDate.css';
 
 function TimeRecordDate({date}) {
-  const month = date.toLocaleString('en-US', {month: 'long'});
-  const day = date.toLocaleString('en-US', {day: '2-digit'});
-  const year = date.getFullYear();
+  let splitDate = date.split(/\D/);
+  const year = splitDate[0];
+  const month = splitDate[1];
+  const day = splitDate[2];
   
   return (
     <div className='record-date'>

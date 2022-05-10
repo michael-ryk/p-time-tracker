@@ -3,10 +3,10 @@ import './RecordForm.css';
 
 function RecordForm(props) {
   const [newRecord, setNewRecord] = useState({
-    date: '',
+    date: '2020-01-01',
     activity: '',
     hours: 0,
-    spent: '',
+    mode: '',
   });
 
   function onChange({ target }) {
@@ -55,8 +55,8 @@ function RecordForm(props) {
           />
         </div>
         <div className='record-form__item'>
-          <label>Time spent:</label>
-          <select name='spent' value={newRecord.spent} onChange={onChange}>
+          <label>Mode:</label>
+          <select name='mode' value={newRecord.mode} onChange={onChange}>
             <option value='Productive'>Productive</option>
             <option value='Wasted'>Wasted</option>
           </select>
