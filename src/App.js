@@ -4,10 +4,13 @@ import dummyRecords from './dummyRecords';
 import './App.css';
 
 function App() {
+
+  const data = [...dummyRecords]
+
   return (
     <div className='App'>
-      <NewRecord />
-      <TimeRecords records={dummyRecords}/>
+      <NewRecord records={data}/>
+      <TimeRecords records={data}/>
     </div>
   );
 }

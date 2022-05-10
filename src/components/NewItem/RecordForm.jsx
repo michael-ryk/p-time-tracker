@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './RecordForm.css';
 
-function RecordForm() {
+function RecordForm(props) {
   const [newRecord, setNewRecord] = useState({
     date: '',
     activity: '',
@@ -18,7 +18,7 @@ function RecordForm() {
 
   function submitHandler(event) {
     event.preventDefault();
-    console.log(newRecord);
+    props.onSubmitRecord(newRecord);
   }
 
   return (
