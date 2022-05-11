@@ -11,12 +11,13 @@ function TimeRecord(props){
     setFilter(selectedType);
   }
 
+  const filteredRecords = filter==="All" ? props.records : props.records.filter(item => item.mode===filter);
 
   return (
     <>
       <div className="timeRec">
         <RecordsFilter selected={filter} onFilterChange={filterChangeHandler}/>
-        {props.records.map((item) => {
+        {filteredRecords.map((item) => {
           return <TimeRecordItem key={item.id} {...item} />;
         })}
       </div>
